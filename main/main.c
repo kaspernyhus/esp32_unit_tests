@@ -12,6 +12,7 @@
 #include "esp_log.h"
 #include "arithmetics.h"
 #include "swap.h"
+#include "module_in_main/return_six.h"
 
 /* This application has a test subproject in 'test' directory, all the
  * interesting things happen there. See ../test/main/example_idf_test_runner_test.c
@@ -24,10 +25,14 @@
 void app_main(void)
 {
     int result = arithmetics_add_four(1);
-    ESP_LOGI("main", "arithmetics_add_four(1)=%d", result);
+    ESP_LOGI("main", "arithmetics_add_four(1) = %d", result);
 
     int a = 6;
-    int b = 12;
+    int b = 1;
+    ESP_LOGI("main", "BEFORE a:%d, b:%d", a, b);
     swap(&a, &b);
-    ESP_LOGI("main", "a: %d, b:%d", a, b);
+    ESP_LOGI("main", "AFTER  a:%d, b:%d", a, b);
+
+    int six = return_six();
+    ESP_LOGI("main", "return_six() = %d", six);
 }

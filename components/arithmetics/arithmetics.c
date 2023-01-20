@@ -8,7 +8,7 @@
    CONDITIONS OF ANY KIND, either express or implied.
 */
 
-#include "arithmetics.h"
+#include "include/arithmetics.h"
 
 int arithmetics_add_four(int value)
 {

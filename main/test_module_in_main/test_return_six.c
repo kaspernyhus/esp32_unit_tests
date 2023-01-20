@@ -9,11 +9,10 @@
 
 #include <limits.h>
 #include "unity.h"
-#include "add_four.h"
+#include "module_in_main/return_six.h"
 
-TEST_CASE("add_four check", "[add_four]")
+TEST_CASE("return_six check", "[return_six]")
 {
-    const int values[] = { 0 };
-    TEST_ASSERT_EQUAL(9, add_four(5));
+    //! Test should fail
+    TEST_ASSERT_EQUAL(0, return_six());
 }
-

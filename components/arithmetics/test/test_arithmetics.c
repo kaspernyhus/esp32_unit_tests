@@ -11,7 +11,8 @@
 #include "unity.h"
 #include "arithmetics.h"
 
-TEST_CASE("5+4=9", "[mean]")
+TEST_CASE("Arithmetic tests", "[arithmetics]")
 {
-    TEST_ASSERT_EQUAL(0, arithmetics_add_four(5));
+    TEST_ASSERT_EQUAL(9, arithmetics_add_four(5));
+    TEST_ASSERT_EQUAL(4, arithmetics_add_four(0));
 }

@@ -11,7 +11,7 @@
 #include "unity.h"
 #include "swap.h"
 
-TEST_CASE("swap a=2 and b=4", "[swap]")
+TEST_CASE("swap tests", "[swap]")
 {
     int a = 2;
     int b = 4;
