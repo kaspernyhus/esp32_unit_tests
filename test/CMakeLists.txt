@@ -5,6 +5,7 @@ cmake_minimum_required(VERSION 3.5)
 #
 set(EXTRA_COMPONENT_DIRS
     "../components"
+    "../main/module_in_main"
     )
 
 # Set the components to include the tests for.
@@ -15,7 +16,7 @@ set(EXTRA_COMPONENT_DIRS
 set(TEST_COMPONENTS
     "arithmetics"
     "swap"
-    "main"
+    "module_in_main"
     )
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)

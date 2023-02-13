@@ -12,7 +12,7 @@
 #include "esp_log.h"
 #include "arithmetics.h"
 #include "swap.h"
-#include "module_in_main/return_six.h"
+#include "module_in_main/include/return_six.h"
 
 /* This application has a test subproject in 'test' directory, all the
  * interesting things happen there. See ../test/main/example_idf_test_runner_test.c
