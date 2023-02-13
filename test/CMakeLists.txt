@@ -5,7 +5,6 @@ cmake_minimum_required(VERSION 3.5)
 #
 set(EXTRA_COMPONENT_DIRS
     "../components"
-    "../main"
     )
 
 # Set the components to include the tests for.
