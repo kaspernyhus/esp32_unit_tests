@@ -9,7 +9,7 @@
 
 #include <limits.h>
 #include "unity.h"
-#include "module_in_main/return_six.h"
+#include "return_six.h"
 
 TEST_CASE("return_six check", "[return_six]")
 {
