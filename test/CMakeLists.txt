@@ -16,7 +16,7 @@ set(EXTRA_COMPONENT_DIRS
 set(TEST_COMPONENTS
     "arithmetics"
     "swap"
-    "main"
+    "module_in_main"
     )
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
